@@ -6,7 +6,7 @@
 > [!NOTE]
 > Étapes extraites du tutorial Git pour [Dupliquer un référentiel](https://docs.github.com/fr/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository)
 
-1. Dans le coin supérieur droit de la page, cliquez sur **Fork**.
+1. Dans le coin supérieur droit de la page du dépôt, cliquez sur **Fork**.
 2. Sous « Propriétaire », sélectionnez le menu déroulant et cliquez sur un propriétaire pour le dépôt dupliqué.
 3. Dans le champ « Nom du dépôt », changer le nom du référentiel en suffixant par votre prénom.
 4. Sélectionnez "Copier la branche **PAR DÉFAUT** uniquement".
@@ -28,7 +28,7 @@
 
 1. Ouvrez Unity Hub et sélectionnez l'onglet Projects dans la barre de menu à gauche
 2. Appuyez sur le bouton Add en haut à droite
-3. Sélectionnez le répertoire du projet
+3. Sélectionnez le répertoire du projet (*/Exercise*)
 4. Cliquez sur le bouton Open et attendez l'ouverture du projet
 
 # Consignes
