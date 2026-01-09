@@ -5,7 +5,7 @@ public class ProjectileController : MonoBehaviour
     [SerializeField] private float m_vitesse = 20f;
     [SerializeField] private float m_dureeDeVie = 5f;
 
-    [SerializeField] private GameObject m_player;
+    [SerializeField] private GameObject platformPrefab;
 
     private Rigidbody rb;
 
@@ -27,7 +27,14 @@ public class ProjectileController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        m_player.transform.position = transform.position;
+        if (collision.gameObject.CompareTag("Cible") == true)
+        {
+            Vector3 spawnPosition = new Vector3(-2.54f, 0f, 2.48f);
+            Quaternion spawnRotation = Quaternion.identity;
+
+            Instantiate(platformPrefab, spawnPosition, spawnRotation);
+
+        }
         Destroy(gameObject);
     }
 }
