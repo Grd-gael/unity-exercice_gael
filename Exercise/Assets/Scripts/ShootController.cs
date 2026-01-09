@@ -26,7 +26,6 @@ public class ShootController : MonoBehaviour
         if (m_projectile != null)
         {
             Vector3 position = m_player.transform.position + m_player.transform.forward * 1.5f + Vector3.up * 1.0f;
-            Debug.Log("Shoot projectile from position: " + position);
             GameObject projectileInstance = Instantiate(m_projectile, position, m_player.transform.rotation);
         }
     }
